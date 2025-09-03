@@ -1,0 +1,140 @@
+@import url('https://fonts.google.com/specimen/Young+Serif');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Young Serif';
+    background-color: hsl(30, 54%, 90%);
+    color: black;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 50px;
+    font-style: inherit;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container .image-container {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.text-container .main-heading {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.text-container .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.text-container h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+.Preparation-list {
+    background-color: #fff7fc;
+    color: black;
+    padding: 25px;
+    border-radius: 15px;
+
+}
+
+.Preparation-list ul {
+    border-bottom: none;
+}
+
+.Preparation-list h2 {
+    color: hsl(332, 39%, 41%);
+}
+
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: #3f3f3f 1px solid;
+}
+
+li {
+    padding-left: 1em;
+    padding-bottom: 10px;
+
+}
+
+li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+h2 {
+    color: hsl(332, 51%, 32%);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.instruction-list ul {
+    display: inline-block;
+    list-style-type: none;
+    counter-reset: my-counter;
+    padding-left: 0px;
+}
+
+.instruction-list li::before {
+    content: counter(custom-list-counter) ". ";
+    font-weight: bold;
+    color: hsl(332, 51%, 32%);
+     display: table-cell;
+       padding-right: 1em; 
+         padding-left: -1em;
+
+}
+
+.instruction-list li {
+    counter-increment: custom-list-counter;
+     display: table-row;
+}
+
+.Nutrition-table p {
+    padding-bottom: 10px;
+}
+
+.Nutrition-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.Nutrition-table th,
+.Nutrition-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px 25px;
+    text-align: left;
+}
+
+.Nutrition-table .td-text {
+    color: hsl(332, 39%, 41%);
+    font-weight: 600;
+    font-size: 16px;
+}
