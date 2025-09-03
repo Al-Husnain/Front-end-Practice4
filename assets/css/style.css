@@ -14,7 +14,6 @@ body {
     line-height: 1.6;
     padding: 50px;
     font-style: inherit;
-
 }
 
 .container {
@@ -136,5 +135,23 @@ h2 {
 .Nutrition-table .td-text {
     color: hsl(332, 39%, 41%);
     font-weight: 600;
-    font-size: 16px;
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        padding: 0;
+    }
+    .container {
+        padding: 0;
+        text-align: left;
+    }
+    .image-container img {
+        border-radius: 0;
+        margin-bottom: 0;
+        
+    }
+    .text-container {
+        padding: 0 25px;
+    }
+
 }
